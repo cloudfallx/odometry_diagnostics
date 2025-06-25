@@ -1,0 +1,312 @@
+[0.000000] (-) TimerEvent: {}
+[0.000247] (lidarbot1) JobQueued: {'identifier': 'lidarbot1', 'dependencies': OrderedDict()}
+[0.000274] (lidarbot1) JobStarted: {'identifier': 'lidarbot1'}
+[0.006291] (lidarbot1) JobProgress: {'identifier': 'lidarbot1', 'progress': 'cmake'}
+[0.006726] (lidarbot1) Command: {'cmd': ['/usr/bin/cmake', '/home/user/ros2_ws/src/lidarbot1', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/ros2_ws/src/lidarbot1/install/lidarbot1'], 'cwd': '/home/user/ros2_ws/src/lidarbot1/build/lidarbot1', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/user'), ('OLDPWD', '/home/user'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1987'), ('SYSTEMD_EXEC_PID', '2178'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3227'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/user/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('JOURNAL_STREAM', '8:11981'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/M349DTRV:@/tmp/.ICE-unix/2149,unix/M349DTRV:/tmp/.ICE-unix/2149'), ('INVOCATION_ID', 'd536a1d2798f4278aa26d84394f05850'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OP1Y72'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/user/ros2_ws/install/lidarbot1:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:18f1a934-76ae-41a8-a840-34448feb7205'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/ros2_ws/src/lidarbot1/build/lidarbot1'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/user/ros2_ws/install/lidarbot1:/opt/ros/humble')]), 'shell': False}
+[0.099557] (-) TimerEvent: {}
+[0.200310] (-) TimerEvent: {}
+[0.301069] (-) TimerEvent: {}
+[0.401659] (-) TimerEvent: {}
+[0.502014] (-) TimerEvent: {}
+[0.602597] (-) TimerEvent: {}
+[0.703216] (-) TimerEvent: {}
+[0.803786] (-) TimerEvent: {}
+[0.904577] (-) TimerEvent: {}
+[1.005229] (-) TimerEvent: {}
+[1.105724] (-) TimerEvent: {}
+[1.206204] (-) TimerEvent: {}
+[1.307113] (-) TimerEvent: {}
+[1.407683] (-) TimerEvent: {}
+[1.508330] (-) TimerEvent: {}
+[1.608817] (-) TimerEvent: {}
+[1.709409] (-) TimerEvent: {}
+[1.809992] (-) TimerEvent: {}
+[1.910738] (-) TimerEvent: {}
+[2.011427] (-) TimerEvent: {}
+[2.112040] (-) TimerEvent: {}
+[2.212770] (-) TimerEvent: {}
+[2.313412] (-) TimerEvent: {}
+[2.414102] (-) TimerEvent: {}
+[2.514694] (-) TimerEvent: {}
+[2.615463] (-) TimerEvent: {}
+[2.716240] (-) TimerEvent: {}
+[2.816897] (-) TimerEvent: {}
+[2.917552] (-) TimerEvent: {}
+[3.018139] (-) TimerEvent: {}
+[3.118788] (-) TimerEvent: {}
+[3.219434] (-) TimerEvent: {}
+[3.320256] (-) TimerEvent: {}
+[3.420893] (-) TimerEvent: {}
+[3.521690] (-) TimerEvent: {}
+[3.622305] (-) TimerEvent: {}
+[3.706083] (lidarbot1) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[3.722355] (-) TimerEvent: {}
+[3.822557] (-) TimerEvent: {}
+[3.922866] (-) TimerEvent: {}
+[4.023286] (-) TimerEvent: {}
+[4.123927] (-) TimerEvent: {}
+[4.224487] (-) TimerEvent: {}
+[4.324741] (-) TimerEvent: {}
+[4.424988] (-) TimerEvent: {}
+[4.456713] (lidarbot1) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[4.525117] (-) TimerEvent: {}
+[4.529211] (lidarbot1) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[4.625234] (-) TimerEvent: {}
+[4.725507] (-) TimerEvent: {}
+[4.755774] (lidarbot1) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[4.762076] (lidarbot1) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[4.762463] (lidarbot1) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[4.807911] (lidarbot1) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[4.811249] (lidarbot1) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[4.825596] (-) TimerEvent: {}
+[4.925856] (-) TimerEvent: {}
+[4.998826] (lidarbot1) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[5.005105] (lidarbot1) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[5.005341] (lidarbot1) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[5.005673] (lidarbot1) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[5.025934] (-) TimerEvent: {}
+[5.126181] (-) TimerEvent: {}
+[5.126909] (lidarbot1) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[5.226223] (-) TimerEvent: {}
+[5.326498] (-) TimerEvent: {}
+[5.426803] (-) TimerEvent: {}
+[5.527200] (-) TimerEvent: {}
+[5.627947] (-) TimerEvent: {}
+[5.728643] (-) TimerEvent: {}
+[5.829106] (-) TimerEvent: {}
+[5.929654] (-) TimerEvent: {}
+[6.010308] (lidarbot1) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[6.029923] (-) TimerEvent: {}
+[6.130506] (-) TimerEvent: {}
+[6.230994] (-) TimerEvent: {}
+[6.277531] (lidarbot1) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[6.331369] (-) TimerEvent: {}
+[6.431964] (-) TimerEvent: {}
+[6.532740] (-) TimerEvent: {}
+[6.633290] (-) TimerEvent: {}
+[6.733796] (-) TimerEvent: {}
+[6.834259] (-) TimerEvent: {}
+[6.934855] (-) TimerEvent: {}
+[7.018002] (lidarbot1) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[7.034955] (-) TimerEvent: {}
+[7.135202] (-) TimerEvent: {}
+[7.235446] (-) TimerEvent: {}
+[7.335670] (-) TimerEvent: {}
+[7.381600] (lidarbot1) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[7.408914] (lidarbot1) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[7.435781] (-) TimerEvent: {}
+[7.484416] (lidarbot1) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[7.535897] (-) TimerEvent: {}
+[7.612053] (lidarbot1) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.636193] (-) TimerEvent: {}
+[7.736521] (-) TimerEvent: {}
+[7.837062] (-) TimerEvent: {}
+[7.867323] (lidarbot1) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.937314] (-) TimerEvent: {}
+[8.037943] (-) TimerEvent: {}
+[8.138523] (-) TimerEvent: {}
+[8.239295] (-) TimerEvent: {}
+[8.340100] (-) TimerEvent: {}
+[8.441034] (-) TimerEvent: {}
+[8.541882] (-) TimerEvent: {}
+[8.642636] (-) TimerEvent: {}
+[8.743361] (-) TimerEvent: {}
+[8.843939] (-) TimerEvent: {}
+[8.944695] (-) TimerEvent: {}
+[9.007125] (lidarbot1) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[9.044918] (-) TimerEvent: {}
+[9.070936] (lidarbot1) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[9.145389] (-) TimerEvent: {}
+[9.246316] (-) TimerEvent: {}
+[9.347228] (-) TimerEvent: {}
+[9.447837] (-) TimerEvent: {}
+[9.548466] (-) TimerEvent: {}
+[9.629432] (lidarbot1) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[9.648816] (-) TimerEvent: {}
+[9.749652] (-) TimerEvent: {}
+[9.850448] (-) TimerEvent: {}
+[9.951058] (-) TimerEvent: {}
+[10.051660] (-) TimerEvent: {}
+[10.152224] (-) TimerEvent: {}
+[10.199018] (lidarbot1) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[10.252350] (-) TimerEvent: {}
+[10.352625] (-) TimerEvent: {}
+[10.452868] (-) TimerEvent: {}
+[10.553111] (-) TimerEvent: {}
+[10.653397] (-) TimerEvent: {}
+[10.700121] (lidarbot1) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[10.700365] (lidarbot1) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[10.753482] (-) TimerEvent: {}
+[10.786084] (lidarbot1) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[10.786835] (lidarbot1) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[10.853601] (-) TimerEvent: {}
+[10.953849] (-) TimerEvent: {}
+[11.054095] (-) TimerEvent: {}
+[11.154374] (-) TimerEvent: {}
+[11.254895] (-) TimerEvent: {}
+[11.355498] (-) TimerEvent: {}
+[11.401968] (lidarbot1) StdoutLine: {'line': b'-- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[11.455679] (-) TimerEvent: {}
+[11.498931] (lidarbot1) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[11.555910] (-) TimerEvent: {}
+[11.656473] (-) TimerEvent: {}
+[11.756859] (-) TimerEvent: {}
+[11.857466] (-) TimerEvent: {}
+[11.958085] (-) TimerEvent: {}
+[12.036247] (lidarbot1) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[12.036895] (lidarbot1) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[12.037249] (lidarbot1) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[12.058219] (-) TimerEvent: {}
+[12.059583] (lidarbot1) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[12.064740] (lidarbot1) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[12.069660] (lidarbot1) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[12.078631] (lidarbot1) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[12.078787] (lidarbot1) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[12.080724] (lidarbot1) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[12.082935] (lidarbot1) StdoutLine: {'line': b'-- Configuring done\n'}
+[12.093629] (lidarbot1) StdoutLine: {'line': b'-- Generating done\n'}
+[12.096795] (lidarbot1) StdoutLine: {'line': b'-- Build files have been written to: /home/user/ros2_ws/src/lidarbot1/build/lidarbot1\n'}
+[12.103348] (lidarbot1) CommandEnded: {'returncode': 0}
+[12.104058] (lidarbot1) JobProgress: {'identifier': 'lidarbot1', 'progress': 'build'}
+[12.104921] (lidarbot1) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/ros2_ws/src/lidarbot1/build/lidarbot1', '--', '-j12', '-l12'], 'cwd': '/home/user/ros2_ws/src/lidarbot1/build/lidarbot1', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/user'), ('OLDPWD', '/home/user'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1987'), ('SYSTEMD_EXEC_PID', '2178'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3227'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/user/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('JOURNAL_STREAM', '8:11981'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/M349DTRV:@/tmp/.ICE-unix/2149,unix/M349DTRV:/tmp/.ICE-unix/2149'), ('INVOCATION_ID', 'd536a1d2798f4278aa26d84394f05850'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OP1Y72'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/user/ros2_ws/install/lidarbot1:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:18f1a934-76ae-41a8-a840-34448feb7205'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/ros2_ws/src/lidarbot1/build/lidarbot1'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/user/ros2_ws/install/lidarbot1:/opt/ros/humble')]), 'shell': False}
+[12.145781] (lidarbot1) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/cmd_vel_subscriber.dir/src/subscriber_member_function.cpp.o\x1b[0m\n'}
+[12.158322] (-) TimerEvent: {}
+[12.258968] (-) TimerEvent: {}
+[12.359843] (-) TimerEvent: {}
+[12.460408] (-) TimerEvent: {}
+[12.560862] (-) TimerEvent: {}
+[12.661610] (-) TimerEvent: {}
+[12.761970] (-) TimerEvent: {}
+[12.862546] (-) TimerEvent: {}
+[12.963148] (-) TimerEvent: {}
+[13.063821] (-) TimerEvent: {}
+[13.164466] (-) TimerEvent: {}
+[13.265113] (-) TimerEvent: {}
+[13.365711] (-) TimerEvent: {}
+[13.466286] (-) TimerEvent: {}
+[13.566837] (-) TimerEvent: {}
+[13.667627] (-) TimerEvent: {}
+[13.768274] (-) TimerEvent: {}
+[13.868902] (-) TimerEvent: {}
+[13.969629] (-) TimerEvent: {}
+[14.070004] (-) TimerEvent: {}
+[14.170619] (-) TimerEvent: {}
+[14.271242] (-) TimerEvent: {}
+[14.371868] (-) TimerEvent: {}
+[14.472482] (-) TimerEvent: {}
+[14.573163] (-) TimerEvent: {}
+[14.673826] (-) TimerEvent: {}
+[14.774134] (-) TimerEvent: {}
+[14.874924] (-) TimerEvent: {}
+[14.975654] (-) TimerEvent: {}
+[15.076291] (-) TimerEvent: {}
+[15.176547] (-) TimerEvent: {}
+[15.276866] (-) TimerEvent: {}
+[15.377125] (-) TimerEvent: {}
+[15.477651] (-) TimerEvent: {}
+[15.577895] (-) TimerEvent: {}
+[15.678182] (-) TimerEvent: {}
+[15.778452] (-) TimerEvent: {}
+[15.878713] (-) TimerEvent: {}
+[15.978974] (-) TimerEvent: {}
+[16.079237] (-) TimerEvent: {}
+[16.179513] (-) TimerEvent: {}
+[16.279779] (-) TimerEvent: {}
+[16.380044] (-) TimerEvent: {}
+[16.480695] (-) TimerEvent: {}
+[16.580928] (-) TimerEvent: {}
+[16.681213] (-) TimerEvent: {}
+[16.781537] (-) TimerEvent: {}
+[16.881795] (-) TimerEvent: {}
+[16.982417] (-) TimerEvent: {}
+[17.082655] (-) TimerEvent: {}
+[17.182910] (-) TimerEvent: {}
+[17.283253] (-) TimerEvent: {}
+[17.383556] (-) TimerEvent: {}
+[17.483864] (-) TimerEvent: {}
+[17.584133] (-) TimerEvent: {}
+[17.684421] (-) TimerEvent: {}
+[17.784672] (-) TimerEvent: {}
+[17.884932] (-) TimerEvent: {}
+[17.985240] (-) TimerEvent: {}
+[18.085520] (-) TimerEvent: {}
+[18.185786] (-) TimerEvent: {}
+[18.286052] (-) TimerEvent: {}
+[18.386336] (-) TimerEvent: {}
+[18.486590] (-) TimerEvent: {}
+[18.586833] (-) TimerEvent: {}
+[18.687117] (-) TimerEvent: {}
+[18.787413] (-) TimerEvent: {}
+[18.887672] (-) TimerEvent: {}
+[18.988018] (-) TimerEvent: {}
+[19.088322] (-) TimerEvent: {}
+[19.188582] (-) TimerEvent: {}
+[19.288842] (-) TimerEvent: {}
+[19.389086] (-) TimerEvent: {}
+[19.489361] (-) TimerEvent: {}
+[19.589620] (-) TimerEvent: {}
+[19.689891] (-) TimerEvent: {}
+[19.790154] (-) TimerEvent: {}
+[19.890450] (-) TimerEvent: {}
+[19.990744] (-) TimerEvent: {}
+[20.091028] (-) TimerEvent: {}
+[20.191241] (-) TimerEvent: {}
+[20.291505] (-) TimerEvent: {}
+[20.391749] (-) TimerEvent: {}
+[20.492011] (-) TimerEvent: {}
+[20.592233] (-) TimerEvent: {}
+[20.692488] (-) TimerEvent: {}
+[20.792745] (-) TimerEvent: {}
+[20.892997] (-) TimerEvent: {}
+[20.993242] (-) TimerEvent: {}
+[21.093502] (-) TimerEvent: {}
+[21.193777] (-) TimerEvent: {}
+[21.230889] (lidarbot1) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable cmd_vel_subscriber\x1b[0m\n'}
+[21.294044] (-) TimerEvent: {}
+[21.394353] (-) TimerEvent: {}
+[21.494982] (-) TimerEvent: {}
+[21.595630] (-) TimerEvent: {}
+[21.696344] (-) TimerEvent: {}
+[21.796715] (-) TimerEvent: {}
+[21.897265] (-) TimerEvent: {}
+[21.997891] (-) TimerEvent: {}
+[22.098224] (-) TimerEvent: {}
+[22.160958] (lidarbot1) StdoutLine: {'line': b'[100%] Built target cmd_vel_subscriber\n'}
+[22.170299] (lidarbot1) CommandEnded: {'returncode': 0}
+[22.170849] (lidarbot1) JobProgress: {'identifier': 'lidarbot1', 'progress': 'install'}
+[22.178347] (lidarbot1) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/user/ros2_ws/src/lidarbot1/build/lidarbot1'], 'cwd': '/home/user/ros2_ws/src/lidarbot1/build/lidarbot1', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/user'), ('OLDPWD', '/home/user'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1987'), ('SYSTEMD_EXEC_PID', '2178'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3227'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/user/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('JOURNAL_STREAM', '8:11981'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/M349DTRV:@/tmp/.ICE-unix/2149,unix/M349DTRV:/tmp/.ICE-unix/2149'), ('INVOCATION_ID', 'd536a1d2798f4278aa26d84394f05850'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OP1Y72'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/user/ros2_ws/install/lidarbot1:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:18f1a934-76ae-41a8-a840-34448feb7205'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/ros2_ws/src/lidarbot1/build/lidarbot1'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/user/ros2_ws/install/lidarbot1:/opt/ros/humble')]), 'shell': False}
+[22.184599] (lidarbot1) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.184986] (lidarbot1) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[22.185504] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/lidarbot1//urdf/camera.xacro\n'}
+[22.192970] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/lidarbot1//urdf/depth_camera.xacro\n'}
+[22.198255] (-) TimerEvent: {}
+[22.200017] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/lidarbot1//urdf/gazebo_control.xacro\n'}
+[22.206972] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/lidarbot1//urdf/lidar.xacro\n'}
+[22.213882] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/lidarbot1//urdf/lidarbot1.urdf.xacro\n'}
+[22.220690] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/lidarbot1//urdf/lidarbot1_core.xacro\n'}
+[22.227590] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/lidarbot1//urdf/ros2_control.xacro\n'}
+[22.234525] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/lidarbot1//launch/launch_sim.launch.py\n'}
+[22.241886] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/lidarbot1//launch/rsp.launch.py\n'}
+[22.248989] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/lidarbot1//launch/rviz.launch.py\n'}
+[22.256269] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/lidarbot1//rviz/lidarbot1_rviz.rviz\n'}
+[22.263310] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/lidarbot1//config/my_controllers.yaml\n'}
+[22.270514] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/lib/lidarbot1/cmd_vel_subscriber\n'}
+[22.277735] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/ament_index/resource_index/package_run_dependencies/lidarbot1\n'}
+[22.284866] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/ament_index/resource_index/parent_prefix_path/lidarbot1\n'}
+[22.292046] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/lidarbot1/environment/ament_prefix_path.sh\n'}
+[22.298356] (-) TimerEvent: {}
+[22.299184] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/lidarbot1/environment/ament_prefix_path.dsv\n'}
+[22.306327] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/lidarbot1/environment/path.sh\n'}
+[22.313397] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/lidarbot1/environment/path.dsv\n'}
+[22.320471] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/lidarbot1/local_setup.bash\n'}
+[22.327832] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/lidarbot1/local_setup.sh\n'}
+[22.334758] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/lidarbot1/local_setup.zsh\n'}
+[22.341862] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/lidarbot1/local_setup.dsv\n'}
+[22.348912] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/lidarbot1/package.dsv\n'}
+[22.355961] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/ament_index/resource_index/packages/lidarbot1\n'}
+[22.362913] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/lidarbot1/cmake/lidarbot1Config.cmake\n'}
+[22.369875] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/lidarbot1/cmake/lidarbot1Config-version.cmake\n'}
+[22.376689] (lidarbot1) StdoutLine: {'line': b'-- Symlinking: /home/user/ros2_ws/src/lidarbot1/install/lidarbot1/share/lidarbot1/package.xml\n'}
+[22.384895] (lidarbot1) CommandEnded: {'returncode': 0}
+[22.396952] (lidarbot1) JobEnded: {'identifier': 'lidarbot1', 'rc': 0}
+[22.397176] (-) EventReactorShutdown: {}

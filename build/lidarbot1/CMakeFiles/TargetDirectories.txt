@@ -1,0 +1,10 @@
+/home/user/ros2_ws/src/lidarbot1/build/lidarbot1/CMakeFiles/uninstall.dir
+/home/user/ros2_ws/src/lidarbot1/build/lidarbot1/CMakeFiles/lidarbot1_uninstall.dir
+/home/user/ros2_ws/src/lidarbot1/build/lidarbot1/CMakeFiles/cmd_vel_subscriber.dir
+/home/user/ros2_ws/src/lidarbot1/build/lidarbot1/CMakeFiles/test.dir
+/home/user/ros2_ws/src/lidarbot1/build/lidarbot1/CMakeFiles/edit_cache.dir
+/home/user/ros2_ws/src/lidarbot1/build/lidarbot1/CMakeFiles/rebuild_cache.dir
+/home/user/ros2_ws/src/lidarbot1/build/lidarbot1/CMakeFiles/list_install_components.dir
+/home/user/ros2_ws/src/lidarbot1/build/lidarbot1/CMakeFiles/install.dir
+/home/user/ros2_ws/src/lidarbot1/build/lidarbot1/CMakeFiles/install/local.dir
+/home/user/ros2_ws/src/lidarbot1/build/lidarbot1/CMakeFiles/install/strip.dir

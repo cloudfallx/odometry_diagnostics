@@ -1,0 +1,1 @@
+/home/user/ros2_ws/src/lidarbot1/build/lidarbot1/ament_cmake_environment_hooks/local_setup.bash
