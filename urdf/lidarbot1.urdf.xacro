@@ -9,6 +9,7 @@
 
     <xacro:include filename="gazebo_control.xacro"/>
     <!-- <xacro:include filename="ros2_control.xacro"/> -->
+    <xacro:include filename="imu.xacro"/>
 
     <!-- run odom_unfiltered, with tf2_broadcaster, with use_sim_time to false -->
 </robot>
