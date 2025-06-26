@@ -2,8 +2,11 @@ from launch import LaunchDescription
 from launch_ros.actions import Node
 from launch.substitutions import Command, PathJoinSubstitution
 from launch_ros.substitutions import FindPackageShare
+from launch.substitutions import LaunchConfiguration, PythonExpression
 
-def generate_launch_description(use_sim_time=True):  # Parameter with default True for Gazebo
+def generate_launch_description():  # Parameter with default True for Gazebo
+    
+    use_sim_time = LaunchConfiguration('use_sim_time')
     return LaunchDescription([
         
         # Robot State Publisher

@@ -5,6 +5,7 @@ from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.substitutions import LaunchConfiguration, PythonExpression
 
 from launch_ros.actions import Node
 
@@ -12,18 +13,19 @@ from launch_ros.actions import Node
 def generate_launch_description():
     package_name='lidarbot1'
 
+    use_sim_time = LaunchConfiguration('use_sim_time')
     # Robot State Publisher Launch File
     rsp=IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(
             get_package_share_directory(package_name), 'launch', 'rsp.launch.py'
-        )]), launch_arguments={'use_sim_time': 'true'}.items()
+        )]), launch_arguments={'use_sim_time': use_sim_time}.items()
     )
 
     # Gazebo Launch File
     gazebo=IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(
             get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py'
-        )])
+        )]), launch_arguments={'use_sim_time': use_sim_time}.items()
     )
 
     # Spawner Node
@@ -37,17 +39,17 @@ def generate_launch_description():
         output='screen'
     )
 
-    diff_drive_spawner=Node(
-        package="controller_manager",
-        executable="spawner",
-        arguments=["diff_cont"]
-    )
+    # diff_drive_spawner=Node(
+    #     package="controller_manager",
+    #     executable="spawner",
+    #     arguments=["diff_cont"]
+    # )
 
-    joint_broad_spawner=Node(
-        package="controller_manager",
-        executable="spawner",
-        arguments=["joint_broad"]
-    )
+    # joint_broad_spawner=Node(
+    #     package="controller_manager",
+    #     executable="spawner",
+    #     arguments=["joint_broad"]
+    # )
 
     # Twist Mux
     # twist_mux_params=os.path.join(get_package_share_directory(package_name), 'config', 'twist_mux.yaml')
@@ -58,14 +60,15 @@ def generate_launch_description():
     #     parameters=[twist_mux_params, {'use_sim_time': True}],
     #     remappings=[('/cmd_vel_out', '/diff_cont/cmd_vel_unstamped')]
     # )
-    
+
+
     # Launch the files
     return LaunchDescription([
         rsp,
         gazebo,
         # twist_mux,
         spawn_entity,
-        diff_drive_spawner,
-        joint_broad_spawner
+        # diff_drive_spawner,
+        # joint_broad_spawner
     ])
 

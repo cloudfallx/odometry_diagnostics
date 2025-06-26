@@ -29,7 +29,6 @@ from nav2_common.launch import RewrittenYaml
 def generate_launch_description():
     # Get the launch directory
     bringup_dir = get_package_share_directory('lidarbot1')
-
     namespace = LaunchConfiguration('namespace')
     map_yaml_file = LaunchConfiguration('map')
     use_sim_time = LaunchConfiguration('use_sim_time')
@@ -40,7 +39,7 @@ def generate_launch_description():
     container_name_full = (namespace, '/', container_name)
     use_respawn = LaunchConfiguration('use_respawn')
     log_level = LaunchConfiguration('log_level')
-
+    robot_localization_file_path = os.path.join(bringup_dir, 'config', 'ekf.yaml')
     lifecycle_nodes = ['map_server', 'amcl']
 
     # Map fully qualified names to relative ones so the node's namespace can be prepended.
@@ -107,6 +106,7 @@ def generate_launch_description():
         'log_level', default_value='info',
         description='log level')
 
+
     load_nodes = GroupAction(
         condition=IfCondition(PythonExpression(['not ', use_composition])),
         actions=[
@@ -138,7 +138,14 @@ def generate_launch_description():
                 arguments=['--ros-args', '--log-level', log_level],
                 parameters=[{'use_sim_time': use_sim_time},
                             {'autostart': autostart},
-                            {'node_names': lifecycle_nodes}])
+                            {'node_names': lifecycle_nodes}]),
+            Node(
+                package='robot_localization',
+                executable='ekf_node',
+                name='ekf_filter_node',
+                output='screen',
+                parameters=[robot_localization_file_path, 
+                {'use_sim_time': use_sim_time}])
         ]
     )
 
