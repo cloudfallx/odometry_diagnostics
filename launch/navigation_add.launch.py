@@ -9,6 +9,9 @@ This launch file sets up a complete ROS 2 navigation environment.
 """
  
 import os
+
+from ament_index_python.packages import get_package_share_directory
+
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
@@ -215,7 +218,13 @@ def generate_launch_description():
             'use_sim_time': use_sim_time
         }.items()
     )
- 
+
+    rsp_cmd=IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([os.path.join(
+            get_package_share_directory('lidarbot1'), 'launch', 'rsp.launch.py'
+        )]), launch_arguments={'use_sim_time': use_sim_time}.items()
+    )
+
     spawn_entity_cmd=Node(
         package='gazebo_ros',
         executable='spawn_entity.py',
@@ -262,6 +271,7 @@ def generate_launch_description():
  
     # Add any actions
     ld.add_action(start_gazebo_cmd)
+    ld.add_action(rsp_cmd)
     ld.add_action(spawn_entity_cmd)
     ld.add_action(start_ekf_cmd)
 
