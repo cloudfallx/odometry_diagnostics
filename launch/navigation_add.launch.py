@@ -114,7 +114,7 @@ def generate_launch_description():
  
     declare_world_cmd = DeclareLaunchArgument(
         name='world_file',
-        default_value='obstacles2.world',
+        default_value='/home/user/ros2_ws/src/lidarbot1/worlds/obstacles2.world',
         description='World file name (e.g., empty.world, house.world)')
  
     # Position arguments

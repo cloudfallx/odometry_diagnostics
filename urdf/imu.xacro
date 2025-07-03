@@ -4,85 +4,49 @@
   <joint name="imu_joint" type="fixed">
     <parent link="chassis_link"/>
     <child link="imu_link"/>
-    <origin xyz="-0.10 0.1 0.05" rpy="0 0 0"/>
+    <origin xyz="0 0 0.2" rpy="0 0 0"/>
   </joint>
 
   <link name="imu_link">
+
+    <visual>
+        <geometry>
+            <box size="0.04 0.02 0.02"/>
+        </geometry>
+        <origin xyz="0 0 0"/>
+        <material name="green"/>
+    </visual>
+    <collision>
+        <geometry>
+            <box size="0.1 0.1 0.1"/>
+        </geometry>
+        <origin xyz="0 0 0"/>
+    </collision>
+    <inertial>
+        <mass value="2.0"/>
+        <inertia ixx="0.1" ixy="0" ixz="0" iyy="0.1" iyz="0" izz="0.1"/>
+    </inertial>
+  </link>
+
+  <gazebo reference="imu_link">
     <gravity>true</gravity>
-    <sensor name="bmb_imu" type="imu">
+    <sensor name="imu_sensor" type="imu">
       <always_on>true</always_on>
       <update_rate>100</update_rate>
       <visualize>true</visualize>
-      <imu>
-        <orientation>
-          <x>
-            <noise type="gaussian">
-              <mean>0.0</mean>
-              <stddev>2e-3</stddev>
-            </noise>
-          </x>
-          <y>
-            <noise type="gaussian">
-              <mean>0.0</mean>
-              <stddev>2e-3</stddev>
-            </noise>
-          </y>
-          <z>
-            <noise type="gaussian">
-              <mean>0.0</mean>
-              <stddev>2e-3</stddev>
-            </noise>
-          </z>
-        </orientation>
-        <angular_velocity>
-          <x>
-            <noise type="gaussian">
-              <mean>0.0</mean>
-              <stddev>2e-4</stddev>
-            </noise>
-          </x>
-          <y>
-            <noise type="gaussian">
-              <mean>0.0</mean>
-              <stddev>2e-4</stddev>
-            </noise>
-          </y>
-          <z>
-            <noise type="gaussian">
-              <mean>0.0</mean>
-              <stddev>2e-4</stddev>
-            </noise>
-          </z>
-        </angular_velocity>
-        <linear_acceleration>
-          <x>
-            <noise type="gaussian">
-              <mean>0.0</mean>
-              <stddev>1.7e-2</stddev>
-            </noise>
-          </x>
-          <y>
-            <noise type="gaussian">
-              <mean>0.0</mean>
-              <stddev>1.7e-2</stddev>
-            </noise>
-          </y>
-          <z>
-            <noise type="gaussian">
-              <mean>0.0</mean>
-              <stddev>1.7e-2</stddev>
-            </noise>
-          </z>
-        </linear_acceleration>
-      </imu>
-      <plugin name="imu_sensor" filename="libgazebo_ros_imu_sensor.so">
-        <initial_orientation_as_reference>false</initial_orientation_as_reference>
-        <frame_name>imu_link</frame_name>
-        <ros>
-          <namespace>/imu</namespace>
-          <remapping>~/out:=data</remapping>
-        </ros>
+      <topic>__default_topic__</topic>
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <topicName>imu</topicName>
+        <namespace>/</namespace>
+        <remapping>imu_plugin/out:=imu/data</remapping>
+        <bodyName>imu_link</bodyName>
+        <updateRateHZ>10.0</updateRateHZ>
+        <gaussianNoise>0.0</gaussianNoise>
+        <xyzOffset>0 0 0</xyzOffset>
+        <rpyOffset>0 0 0</rpyOffset>
+        <frameName>imu_link</frameName>
       </plugin>
+      <pose>0 0 0 0 0 0</pose>
     </sensor>
-  </link>
+  </gazebo>
 </robot>
