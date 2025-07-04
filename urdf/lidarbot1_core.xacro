@@ -29,7 +29,6 @@
     </material>
 
     <link name="base_footprint"/>
-    <link name="base_link" />
 
     <link name="chassis_link">
         <visual>
@@ -131,14 +130,8 @@
 
     <!-- JOINTS -->
 
-    <joint name="base_link_joint" type="fixed">
-        <parent link="base_footprint" />
-        <child link="base_link" />
-        <origin xyz="0 0 0" rpy="0 0 0" />
-    </joint>
-
     <joint name="chassis_base_joint" type="fixed">
-        <parent link="base_link"/>
+        <parent link="base_footprint"/>
         <child link="chassis_link"/>
         <origin xyz="0 0 ${wheel_r}" rpy="0 0 0"/>
     </joint>

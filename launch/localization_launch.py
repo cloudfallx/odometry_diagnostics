@@ -145,12 +145,17 @@ def generate_launch_description():
                             {'autostart': autostart},
                             {'node_names': lifecycle_nodes}]),
             Node(
-                package='robot_localization',
-                executable='ekf_node',
-                name='ekf_filter_node',
-                output='screen',
-                parameters=[robot_localization_file_path, 
-                {'use_sim_time': use_sim_time}])
+                package='tf2_ros',
+                executable='static_transform_publisher',
+                name='static_transform_publisher',
+                arguments=['0', '0', '0.15', '0', '0', '0', 'map', 'odom'])
+            # Node(
+            #     package='robot_localization',
+            #     executable='ekf_node',
+            #     name='ekf_filter_node',
+            #     output='screen',
+            #     parameters=[robot_localization_file_path, 
+            #     {'use_sim_time': use_sim_time}])
         ]
     )
 
