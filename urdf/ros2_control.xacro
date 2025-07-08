@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-    <!-- <ros2_control name="GazeboSystem" type="System">
+    <ros2_control name="GazeboSystem" type="System">
         <hardware>
             <plugin>gazebo_ros2_control/GazeboSystem</plugin>
         </hardware>
@@ -28,6 +28,6 @@
         <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
             <parameters>/home/user/ros2_ws/src/lidarbot1/config/controllers.yaml</parameters>
         </plugin>
-    </gazebo> -->
+    </gazebo>
 
 </robot>

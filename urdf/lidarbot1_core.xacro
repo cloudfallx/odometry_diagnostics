@@ -133,7 +133,7 @@
     <joint name="chassis_base_joint" type="fixed">
         <parent link="base_footprint"/>
         <child link="chassis_link"/>
-        <origin xyz="0 0 ${wheel_r}" rpy="0 0 0"/>
+        <origin xyz="0.15 0 ${wheel_r}" rpy="0 0 0"/>
     </joint>
 
     <joint name="left_wheel_chassis_joint" type="continuous">

@@ -16,7 +16,7 @@ def generate_launch_description(use_sim_time=True):
     rviz_config_file = os.path.join(pkg_share, 'rviz', 'lidarbot1_rviz.rviz')
 
     return LaunchDescription([
-        # # Robot State Publisher
+        # Robot State Publisher
         # Node(
         #     package='robot_state_publisher',
         #     executable='robot_state_publisher',

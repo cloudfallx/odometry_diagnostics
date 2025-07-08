@@ -7,7 +7,8 @@ from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
 
 
-def generate_launch_description(use_sim_time=True):
+def generate_launch_description():
+    use_sim_time = LaunchConfiguration('use_sim_time')
     slam_params_file = LaunchConfiguration('slam_params_file')
 
     declare_use_sim_time_argument = DeclareLaunchArgument(
@@ -16,7 +17,7 @@ def generate_launch_description(use_sim_time=True):
         description='Use simulation/Gazebo clock')
     declare_slam_params_file_cmd = DeclareLaunchArgument(
         'slam_params_file',
-        default_value=os.path.join(get_package_share_directory("lidarbot1"),
+        default_value=os.path.join(get_package_share_directory("slam_toolbox"),
                                    'config', 'mapper_params_online_async.yaml'),
         description='Full path to the ROS2 parameters file to use for the slam_toolbox node')
 

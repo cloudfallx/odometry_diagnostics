@@ -31,8 +31,8 @@ def generate_launch_description():
     bringup_dir = get_package_share_directory('lidarbot1')
 
     namespace = LaunchConfiguration('namespace')
-    autostart = LaunchConfiguration('autostart')
     use_sim_time = LaunchConfiguration('use_sim_time')
+    autostart = LaunchConfiguration('autostart')
     params_file = LaunchConfiguration('params_file')
     use_composition = LaunchConfiguration('use_composition')
     container_name = LaunchConfiguration('container_name')
