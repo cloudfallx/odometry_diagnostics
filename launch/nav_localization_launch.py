@@ -40,6 +40,7 @@ def generate_launch_description():
     container_name_full = (namespace, '/', container_name)
     use_respawn = LaunchConfiguration('use_respawn')
     log_level = LaunchConfiguration('log_level')
+    ekf_config_file = LaunchConfiguration('ekf_config_file')
 
     lifecycle_nodes = ['map_server', 'amcl']
 
@@ -106,6 +107,12 @@ def generate_launch_description():
     declare_log_level_cmd = DeclareLaunchArgument(
         'log_level', default_value='info',
         description='log level')
+    
+    declare_ekf_config_path_cmd = DeclareLaunchArgument(
+        'ekf_config_file',
+        default_value = os.path.join(bringup_dir, 'config', 'ekf.yaml'),
+        description='default path to ekf config file'
+    )
 
     load_nodes = GroupAction(
         condition=IfCondition(PythonExpression(['not ', use_composition])),
@@ -138,7 +145,17 @@ def generate_launch_description():
                 arguments=['--ros-args', '--log-level', log_level],
                 parameters=[{'use_sim_time': use_sim_time},
                             {'autostart': autostart},
-                            {'node_names': lifecycle_nodes}])
+                            {'node_names': lifecycle_nodes}]),
+            Node(
+                package='robot_localization',
+                executable='ekf_node',
+                name='ekf_filter_node',
+                output='screen',
+                parameters=[
+                    ekf_config_file,
+                    {'use_sim_time': use_sim_time}
+                ]
+            )
         ]
     )
 
@@ -184,6 +201,7 @@ def generate_launch_description():
     ld.add_action(declare_container_name_cmd)
     ld.add_action(declare_use_respawn_cmd)
     ld.add_action(declare_log_level_cmd)
+    ld.add_action(declare_ekf_config_path_cmd)
 
     # Add the actions to launch all of the localiztion nodes
     ld.add_action(load_nodes)
