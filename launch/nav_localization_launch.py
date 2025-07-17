@@ -146,16 +146,16 @@ def generate_launch_description():
                 parameters=[{'use_sim_time': use_sim_time},
                             {'autostart': autostart},
                             {'node_names': lifecycle_nodes}]),
-            Node(
-                package='robot_localization',
-                executable='ekf_node',
-                name='ekf_filter_node',
-                output='screen',
-                parameters=[
-                    ekf_config_file,
-                    {'use_sim_time': use_sim_time}
-                ]
-            )
+            # Node(
+            #     package='robot_localization',
+            #     executable='ekf_node',
+            #     name='ekf_filter_node',
+            #     output='screen',
+            #     parameters=[
+            #         ekf_config_file,
+            #         {'use_sim_time': use_sim_time}
+            #     ]
+            # )
         ]
     )
 
@@ -201,7 +201,7 @@ def generate_launch_description():
     ld.add_action(declare_container_name_cmd)
     ld.add_action(declare_use_respawn_cmd)
     ld.add_action(declare_log_level_cmd)
-    ld.add_action(declare_ekf_config_path_cmd)
+    # ld.add_action(declare_ekf_config_path_cmd)
 
     # Add the actions to launch all of the localiztion nodes
     ld.add_action(load_nodes)
